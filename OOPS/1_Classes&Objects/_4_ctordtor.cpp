@@ -37,8 +37,8 @@ int main(void){
      // dynamic object  ke sath ctor and dtor 
      Ctor* ctr = new Ctor;
      Ctor* ctr2 = new Ctor(22,"Abhi"); // 
-     Ctor ctr3(*ctr2); // dynamic se dynamic me copy -> stack me hai memory 
-     Ctor ctr4(ct); // static se dynamic me copy krna  -> stack me hai memory
+     Ctor ctr3(*ctr2); // dynamic se static me copy -> stack me hai memory 
+     Ctor ctr4(ct); // static se static me copy krna  -> stack me hai memory
 
      delete ctr;
      delete ctr2;
