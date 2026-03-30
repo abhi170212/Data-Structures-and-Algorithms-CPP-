@@ -34,7 +34,7 @@ int main(void){
      // inheritance ambiguity error 
      ThirdCode cd;
      cd.SecondCode::name="Abhishek";
-     cout << cd.code::name; // this will not give u an output 
+     cout << cd.code::name;  // this will not give u an output 
      cout << cd.SecondCode::name<<endl;
      return 0;
 }
